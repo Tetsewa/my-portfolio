@@ -34,7 +34,7 @@ const events = [
 function Projects() {
     return (
         <div className="p-8 bg-gray-50">
-            <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Projects</h1>
+            <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Showcasing My Work</h1>
             <div className="mx-auto w-4/5">
                 <Chrono
                     items={events.map(event => ({

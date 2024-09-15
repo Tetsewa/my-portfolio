@@ -46,7 +46,7 @@ const events = [
 export default function ProjectTimeline() {
   return (
     <div className="p-8 bg-gray-50">
-      <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Projects</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Showcasing My Work</h1>
 
       <Timeline position="alternate">
         {events.map((event, index) => (

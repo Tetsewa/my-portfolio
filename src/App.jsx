@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
+import Home2 from './pages/Home2'
 import About from './pages/About'
 import Technologies from './pages/Technologies'
 import Projects from './pages/Projects'
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Home2/>
       <About/>
       <Technologies/>
       <Projects/>
