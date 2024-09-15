@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import About from './pages/About'
 import Technologies from './pages/Technologies'
 import Projects from './pages/Projects'
+import Projects2 from './pages/Projects2'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 
@@ -17,6 +18,7 @@ function App() {
       <About/>
       <Technologies/>
       <Projects/>
+      <Projects2/>
       <Contact/>
       <Footer/>
     
