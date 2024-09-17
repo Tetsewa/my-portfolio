@@ -3,7 +3,7 @@ import Arrow from '../components/Arrow/Arrow';
 
 function About() {
   return (
-    <div className="p-8 font-sans leading-relaxed bg-gray-50">
+    <div className="p-8  leading-relaxed bg-gray-50">
       {/* Title */}
       <h1 className="text-4xl font-bold mb-8 text-gray-800 text-center">About Me</h1>
 
@@ -29,11 +29,9 @@ function About() {
           </p>
           
           <p className="text-lg text-gray-700 mb-4">
-            When I'm not coding, I enjoy <strong>singing🎶🎤, baking👩🏾‍🍳 and spending quality time with family 👨🏾‍👩🏾‍👦🏾‍👦🏾 and friends</strong>, which keeps me creative and inspired.
+            When I'm not coding, I enjoy <strong>singing🎶🎤, baking👩🏾‍🍳 and spending quality time with family 👨🏾‍👩🏾‍👦🏾‍👦🏾 and friends</strong>, which keeps me creative and inspired. Feel free to explore my projects and get in touch if you'd like to collaborate or learn more about my work!
           </p>
-          <p className="text-lg text-gray-700">
-            Feel free to explore my projects and get in touch if you'd like to collaborate or learn more about my work!
-          </p>
+          
         </div>
         <div className="h-[30vh] flex items-center justify-center">
           <Arrow />

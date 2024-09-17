@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         pacifico: ['Pacifico', 'cursive'],
+        courgette: ['Courgette', 'cursive']
       },
     },
   },
