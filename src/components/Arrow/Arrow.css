@@ -1,0 +1,47 @@
+/* Arrow Styling */
+.arrow {
+    width: 5vw;
+    height: 2.5vw; /* Half the width */
+    border: 2.5vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(-135deg); /* Downward arrow */
+  }
+  
+  /* Sliding Animation */
+  .arrowSliding {
+    position: absolute;
+    animation: slide 4s linear infinite;
+  }
+  
+  .delay1 {
+    animation-delay: 1s;
+  }
+  
+  .delay2 {
+    animation-delay: 2s;
+  }
+  
+  .delay3 {
+    animation-delay: 3s;
+  }
+  
+  /* Keyframes for Sliding */
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(-15vh); /* Start above view */
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(-9vh); /* Move to top part */
+    }
+    80% {
+      opacity: 1;
+      transform: translateY(9vh); /* Move to bottom part */
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(15vh); /* End below view */
+    }
+  }
+  

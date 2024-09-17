@@ -1,4 +1,5 @@
 import React from 'react';
+import Arrow from '../components/Arrow/Arrow';
 
 function About() {
   return (
@@ -19,7 +20,7 @@ function About() {
 
         {/* Text Section */}
         <div className="w-full md:w-auto">
-          <p className="text-lg text-gray-700 mb-4">
+          <p className="text-lg text-gray-700 mb-4 text-justify">
             I'm a <strong>fullstack web developer </strong>based in the Netherlands who loves to create responsive, and visually stunning web experiences.
             
           </p>
@@ -34,13 +35,12 @@ function About() {
             Feel free to explore my projects and get in touch if you'd like to collaborate or learn more about my work!
           </p>
         </div>
+        <div className="h-[30vh] flex items-center justify-center">
+          <Arrow />
+        </div>
       </div>
 
-      
-      {/* <div className="mt-8">
-        <h1 className="text-4xl font-bold mb-4 text-gray-800 text-center">My Professional Journey</h1>
-        <p className="text-lg text-gray-700 text-center">In addition to being a developer, I work as a client services manager.</p>
-      </div> */}
+    
     </div>
   );
 }
