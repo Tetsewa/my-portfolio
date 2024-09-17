@@ -12,7 +12,7 @@ function Home2() {
       
       {/* Main heading: Center-aligned */}
       <div className="text-center">
-        <h1 className="text-[50px] font-bold uppercase font-mono tracking-[7px] bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-gray-800 animate-shine">
+        <h1 className="text-[50px] font-bold font-pacifico uppercase font-mono tracking-[7px] bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-gray-800 animate-shine">
           Ama Williams
         </h1>
       </div>

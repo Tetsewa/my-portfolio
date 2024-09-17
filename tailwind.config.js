@@ -16,6 +16,9 @@ module.exports = {
       animation: {
         shine: 'shine 6s linear infinite',
       },
+      fontFamily: {
+        pacifico: ['Pacifico', 'cursive'],
+      },
     },
   },
   plugins: [],
