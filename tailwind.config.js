@@ -22,7 +22,13 @@ module.exports = {
       },
       height: {
         '192': '36rem', 
-      }
+      },
+      colors: {
+        background: '#F5F5F5',
+        main: '#E6E6FA',
+        accent: '#FFC0CB',
+        neutral: '#36454F',
+      },
     },
   },
   plugins: [],

@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => {
 
 const ProjectsContainer = () => {
     return (
-        <div className="min-h-screen bg-gray-50 py-12 px-4">
+        <div className="min-h-screen bg-main py-12 px-4">
             <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
                 Showcasing My Work
             </h1>
