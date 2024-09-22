@@ -6,7 +6,7 @@ const projects = [
         cardTitle: "BuurtHub",
         cardSubtitle: "All-inclusive Community Forum App",
         cardDetailedText: "A full-stack community forum app where users can stay updated on local events, make posts, and trade goods and services. Technologies Used: React, Node JS, Figma, Tailwind CSS, Adaptable, Vercel, Supabase, Express, MongoDB.",
-        imageUrl: "Buurthub.png", 
+        imageUrl: "Buurthub2.png", 
         demoLink: "https://buurt-hub.vercel.app/",
         sourceCodeLink: "https://github.com/Sowjanyakambhampati/BuurtHub"
     },
@@ -55,8 +55,14 @@ const ProjectCard = ({ project }) => {
 
 const ProjectsContainer = () => {
     return (
-        <div className="flex min-h-screen items-center justify-center bg-slate-100">
-            <div className="flex flex-wrap justify-center gap-8">
+        <div className="min-h-screen bg-gray-50 py-12 px-4">
+            <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
+                Showcasing My Work
+            </h1>
+            <h2 className="text-2xl text-center text-gray-600 mb-12">
+                Hover over any project to learn more
+            </h2>
+            <div className="flex flex-wrap justify-center gap-3">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} project={project} />
                 ))}
