@@ -20,6 +20,9 @@ module.exports = {
         pacifico: ['Pacifico', 'cursive'],
         courgette: ['Courgette', 'cursive']
       },
+      height: {
+        '192': '36rem', 
+      }
     },
   },
   plugins: [],
