@@ -1,20 +1,17 @@
 import React from 'react';
-import { Chrono } from 'react-chrono';
 
-const events = [
+const projects = [
     {
         title: "Jul 2024",
         cardTitle: "BuurtHub",
-        cardSubtitle: "All-inclusive Community Forum App",
         cardDetailedText: "A full-stack community forum app where users can stay updated on local events, make posts, and trade goods and services. Technologies Used: React, Node JS, Figma, Tailwind CSS, Adaptable, Vercel, Supabase, Express, MongoDB.",
-        imageUrl: "Buurthub.png", 
+        imageUrl: "Buurthub2.png", 
         demoLink: "https://buurt-hub.vercel.app/",
         sourceCodeLink: "https://github.com/Sowjanyakambhampati/BuurtHub"
     },
     {
         title: "May 2024",
         cardTitle: "StyleSavvy",
-        cardSubtitle: "Beauty Services Booking App",
         cardDetailedText: "A single-page application created with React and Node for booking beauty services. Technologies Used: React, Node JS, Figma, Tailwind CSS, Netlify.",
         imageUrl: "StyleSavvy.png", 
         demoLink: "https://stylesavvyproject.netlify.app/",
@@ -23,54 +20,51 @@ const events = [
     {
         title: "Feb 2024",
         cardTitle: "Fix It Game",
-        cardSubtitle: "Single-player Quiz Game",
-        cardDetailedText: "A quiz game testing basic knowledge of computer hardware parts. Built with HTML, CSS, and JavaScript. Technologies Used: HTML, CSS, JavaScript, Canva.",
-        imageUrl: "Fix-It-Game.png",  
+        cardDetailedText: "A single-player quiz game testing basic knowledge of computer hardware parts. Built with HTML, CSS, and JavaScript. Technologies Used: HTML, CSS, JavaScript, Canva.",
+        imageUrl: "Fix.png",  
         demoLink: "https://tetsewa.github.io/Fix-it-Game/",
-        sourceCodeLink: "https://github.com/username/fix-it-game"
+        sourceCodeLink: "https://github.com/tetsewa/fix-it-game"
     }
 ];
 
-function Projects() {
+const ProjectCard = ({ project }) => {
     return (
-        <div className="p-8 bg-gray-50">
-            <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Showcasing My Work</h1>
-            <div className="mx-auto w-4/5">
-                <Chrono
-                    items={events.map(event => ({
-                        title: event.title,
-                        cardTitle: event.cardTitle,
-                        cardSubtitle: event.cardSubtitle,
-                        cardDetailedText: (
-                            <div>
-                                <p>{event.cardDetailedText}</p>
-                                <img src={event.imageUrl} alt={event.cardTitle} className="mt-4 w-full h-40 object-cover rounded-md shadow-lg" />
-                                <div className="mt-4 flex space-x-4">
-                                    <a
-                                        href={event.demoLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600"
-                                    >
-                                        App Demo
-                                    </a>
-                                    <a
-                                        href={event.sourceCodeLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="px-4 py-2 bg-gray-800 text-white rounded-md shadow-md hover:bg-gray-900"
-                                    >
-                                        Source Code
-                                    </a>
-                                </div>
-                            </div>
-                        )
-                    }))}
-                    mode="HORIZONTAL"
-                />
+        <div className="group w-96 h-80 [perspective:1000px]">
+            <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div className="absolute inset-0">
+                    <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 opacity-50" src={project.imageUrl} alt={project.cardTitle} />
+                </div>
+                <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                    <div className="flex min-h-full flex-col items-center justify-center">
+                        <h1 className="text-3xl font-bold mb-4">{project.cardTitle}</h1>
+                        <p className="text-base mb-4">{project.cardDetailedText}</p>
+                        <div className="mt-4 flex space-x-4">
+                            <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="rounded-md bg-white py-2 px-4 text-sm hover:bg-neutral-900">Demo</a>
+                            <a href={project.sourceCodeLink} target="_blank" rel="noopener noreferrer" className="rounded-md bg-white py-2 px-4 text-sm hover:bg-neutral-900">Source</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
-}
+};
 
-export default Projects;
+const ProjectsContainer = () => {
+    return (
+        <div className="min-h-screen bg-main py-12 px-4">
+            <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
+                Showcasing My Work
+            </h1>
+            <h2 className="text-2xl text-center text-gray-600 mb-12">
+                Hover over any project to learn more
+            </h2>
+            <div className="flex flex-wrap justify-center gap-3">
+                {projects.map((project, index) => (
+                    <ProjectCard key={index} project={project} />
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default ProjectsContainer;

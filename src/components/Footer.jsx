@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="bg-purple-700 text-white py-6">
+    <footer className="bg-neutral text-white py-6">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center flex-col md:flex-row">
           {/* Footer Links */}
@@ -10,10 +10,10 @@ function Footer() {
             <a href="/about" className="hover:underline">
               About
             </a>
-            <a href="/projects" className="hover:underline">
+            <a href="/projects" className="hover:text-white">
               Projects
             </a>
-            <a href="/contact" className="hover:underline">
+            <a href="/contact" className="hover:text-white">
               Contact
             </a>
             

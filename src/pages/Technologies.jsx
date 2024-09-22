@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaGit, FaFigma, FaDatabase, FaPhp } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiExpress, SiMongodb, SiMysql } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiExpress, SiMongodb, SiMysql,SiCanva } from 'react-icons/si';
 
 function Technologies() {
   return (
-    <div className="py-12 bg-gray-100">
+    <div className="p-6 bg-main">
       <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">My Toolbox</h2>
       
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -38,6 +38,7 @@ function Technologies() {
           <div className="flex items-center space-x-4">
             <FaGit className="text-orange-500" size={40} title="Git" />
             <FaFigma className="text-pink-500" size={40} title="Figma" />
+            <SiCanva className="text-blue-500" size={40} title="Canva" />
           </div>
         </div>
 

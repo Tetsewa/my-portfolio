@@ -1,27 +1,30 @@
 import React from 'react';
 
-function Home() {
+function Home2() {
   return (
-    <div className="relative flex items-center justify-center min-h-screen bg-black font-saira">
-      {/* Background Video */}
-      <video 
-        autoPlay 
-        muted 
-        loop 
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      >
-        <source 
-          src="https://mdbootstrap.com/img/video/Sail-Away.mp4" 
-          type="video/mp4" 
-        />
-      </video>
-
-      {/* Overlay Text */}
-      <h2 className="absolute inset-0 flex items-center justify-center w-full h-full m-0 text-[15vw] font-normal uppercase bg-white mix-blend-screen z-10">
-        Ama
-      </h2>
+    <div className="flex flex-col items-center justify-center bg-black">
+      <div className="w-full">
+        {/* Subheading 1: Left-aligned */}
+        <h2 className="text-[30px] font-bold font-mono tracking-[7px] bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-gray-800 mt-4 text-left">
+          Hi there, I'm ...
+        </h2>
+      </div>
+      
+      {/* Main heading: Center-aligned */}
+      <div className="text-center">
+        <h1 className="text-[50px] font-bold font-pacifico uppercase font-mono tracking-[7px] bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-gray-800 animate-shine">
+          Ama Williams
+        </h1>
+      </div>
+      
+      <div className="w-full">
+        {/* Subheading 2: Right-aligned */}
+        <h2 className="text-[30px] font-bold font-mono tracking-[7px] bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-gray-800 mt-4 text-right">
+          A Fullstack Developer
+        </h2>
+      </div>
     </div>
   );
 }
 
-export default Home;
+export default Home2;
