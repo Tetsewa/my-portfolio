@@ -14,8 +14,8 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
-      <Technologies/>
       <Projects/>
+      <Technologies/>
       <Contact/>
       <Footer/>
     
