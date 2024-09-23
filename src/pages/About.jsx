@@ -5,9 +5,9 @@ function About() {
   return (
     <div className="p-8  leading-relaxed bg-main">
       {/* Title */}
-      <h1 className="text-4xl font-bold mb-8 text-gray-800 text-center">About Me</h1>
+      <h1 className="text-4xl font-bold mb-8 text-gray-800 text-center">More About Me...</h1>
 
-      {/* Flex Container for Image and Text */}
+     
       <div className="flex flex-col md:block">
         {/* Image Section */}
         <div className="w-full md:w-1/2 md:float-left md:mr-8 mb-4 md:mb-0">
