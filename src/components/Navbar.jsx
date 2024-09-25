@@ -3,13 +3,13 @@ import React from 'react';
 function Navbar() {
   return (
     <nav className="bg-neutral text-white shadow-lg">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-start">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         
         <div className="flex items-start">
           <img 
             src="logo.png" 
             alt="Logo" 
-            className="h-15 w-12 mr-4 "
+            className="h-16 w-auto mr-4 "
           />
           {/* <span className="text-2xl font-bold">Ama Williams</span> */}
         </div>

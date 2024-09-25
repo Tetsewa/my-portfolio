@@ -2,10 +2,10 @@ import React from 'react';
 
 function Home2() {
   return (
-    <div className="flex flex-col items-center justify-center bg-black">
+    <div className="flex flex-col items-center justify-center bg-black min-h-screen ">
       <div className="w-full">
         {/* Subheading 1: Left-aligned */}
-        <h2 className="text-[30px] font-bold font-mono tracking-[7px] bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-gray-800 mt-4 text-left">
+        <h2 className="text-[30px] font-bold font-mono tracking-[7px] bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-gray-800 mt-4">
           Hi there, I'm ...
         </h2>
       </div>
@@ -19,7 +19,7 @@ function Home2() {
       
       <div className="w-full">
         {/* Subheading 2: Right-aligned */}
-        <h2 className="text-[30px] font-bold font-mono tracking-[7px] bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-gray-800 mt-4 text-right">
+        <h2 className="text-[30px] font-bold font-mono tracking-[7px] bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-gray-800 mt-4">
           A Fullstack Developer
         </h2>
       </div>
