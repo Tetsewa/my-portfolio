@@ -3,7 +3,7 @@ import Arrow from '../components/Arrow/Arrow';
 
 function About() {
   return (
-    <div className="p-8  leading-relaxed bg-main">
+    <div className="p-8 leading-relaxed bg-main min-h-screen">
       {/* Title */}
       <h1 className="text-4xl font-bold mb-8 text-gray-800 text-center">More About Me...</h1>
 

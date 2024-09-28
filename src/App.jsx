@@ -9,19 +9,18 @@ import Career from './pages/Career'
 import Footer from './components/Footer'
 
 function App() {
- 
   return (
     <>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Projects/>
-      <Technologies/>
-      <Career/>
-      <Contact/>
-      <Footer/>
-    
-
+      <Navbar />
+      <main>
+        <section id="home"><Home /></section>
+        <section id="about"><About /></section>
+        <section id="projects"><Projects /></section>
+        <section id="technologies"><Technologies /></section>
+        <section id="career"><Career /></section>
+        <section id="contact"><Contact /></section>
+      </main>
+      <Footer />
     </>
   )
 }
