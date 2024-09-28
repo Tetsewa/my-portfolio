@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 function Navbar() {
   return (
     <nav className="bg-black shadow-lg fixed w-full z-10">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto py-4 flex justify-between items-center">
         
         <div className="flex items-start">
           <img 
