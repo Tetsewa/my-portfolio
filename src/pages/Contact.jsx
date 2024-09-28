@@ -31,7 +31,7 @@ function Contact() {
               rel="noopener noreferrer" 
               fgColor="#F5F5F5"
               bgColor="#36454F"
-              className="hover:scale-110 transition-transform duration-300 hover:bg-accent"
+              className="hover:scale-110 transition-transform duration-300 hover:bg-purple"
             />
           ))}
         </div>

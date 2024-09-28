@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Home2() {
+function Home() {
   return (
     <div className="flex flex-col items-center justify-center bg-black min-h-screen ">
       <div className="w-full">
@@ -27,4 +27,4 @@ function Home2() {
   );
 }
 
-export default Home2;
+export default Home;

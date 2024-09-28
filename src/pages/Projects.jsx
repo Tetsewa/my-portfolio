@@ -51,12 +51,12 @@ const ProjectCard = ({ project }) => {
 
 const ProjectsContainer = () => {
     return (
-        <div className="min-h-screen bg-main py-12 px-4">
-            <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
+        <div className="min-h-screen bg-black py-12 px-4">
+            <h1 className="text-4xl font-bold text-center text-white mb-8">
                 Showcasing My Work
             </h1>
-            <h2 className="text-2xl text-center text-gray-600 mb-12">
-                Hover over any project to learn more
+            <h2 className="text-2xl text-center text-white mb-12">
+                Hover over any project to learn more...
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
                 {projects.map((project, index) => (

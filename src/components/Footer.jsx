@@ -2,18 +2,18 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="bg-neutral text-white py-6">
+    <footer className="bg-black text-white py-6">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center flex-col md:flex-row">
           {/* Footer Links */}
           <div className="flex space-x-10 mb-4 md:mb-0">
-            <a href="/about" className="hover:underline">
+            <a href="/about" className="text-purple hover:text-white">
               About
             </a>
-            <a href="/projects" className="hover:text-white">
+            <a href="/projects" className="text-purple hover:text-white">
               Projects
             </a>
-            <a href="/contact" className="hover:text-white">
+            <a href="/contact" className="text-purple hover:text-white">
               Contact
             </a>
             

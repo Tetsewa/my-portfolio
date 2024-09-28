@@ -28,6 +28,7 @@ module.exports = {
         main: '#E6E6FA',
         accent: '#FFC0CB',
         neutral: '#36454F',
+        purple: '#663399'
       },
     },
   },
