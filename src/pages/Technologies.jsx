@@ -7,10 +7,10 @@ function Technologies() {
     <div className="p-6 bg-black">
       <h2 className="text-4xl font-bold text-center text-white mb-8">My Toolbox</h2>
       
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
         {/* Programming Languages */}
-        <div className="bg-white rounded-lg shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6 card">
           <h3 className="text-xl font-semibold mb-4">Programming Languages</h3>
           <div className="flex items-center space-x-4">
             <FaJs className="text-yellow-500" size={40} title="JavaScript" />
@@ -22,7 +22,7 @@ function Technologies() {
         </div>
 
         {/* Frameworks & Libraries */}
-        <div className="bg-white rounded-lg shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6 card">
           <h3 className="text-xl font-semibold mb-4">Frameworks & Libraries</h3>
           <div className="flex items-center space-x-4">
             <FaNodeJs className="text-green-600" size={40} title="NodeJS" />
@@ -33,7 +33,7 @@ function Technologies() {
         </div>
 
         {/* Tools */}
-        <div className="bg-white rounded-lg shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6 card">
           <h3 className="text-xl font-semibold mb-4">Tools</h3>
           <div className="flex items-center space-x-4">
             <FaGit className="text-orange-500" size={40} title="Git" />
@@ -43,7 +43,7 @@ function Technologies() {
         </div>
 
         {/* Databases */}
-        <div className="bg-white rounded-lg shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6 card">
           <h3 className="text-xl font-semibold mb-4">Databases</h3>
           <div className="flex items-center space-x-4">
             <SiMongodb className="text-green-500" size={40} title="MongoDB" />

@@ -6,7 +6,7 @@ const TimelineItem = ({ date, title, company, description }) => (
     <div className="z-20 flex items-center order-1  w-8 h-8 ">
       <h1 className="mx-auto font-semibold text-lg text-neutral">{date}</h1>
     </div>
-    <div className="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+    <div className="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 card">
       <h3 className="mb-3 font-bold text-neutral text-xl">{title}</h3>
       <h4 className="mb-3 font-semibold text-neutral text-base">{company}</h4>
       <p className="text-sm leading-snug tracking-wide text-neutral text-opacity-100 text-justify">{description}</p>
