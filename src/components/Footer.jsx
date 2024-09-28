@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll'; 
 
 function Footer() {
   return (
@@ -6,18 +7,13 @@ function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center flex-col md:flex-row">
           {/* Footer Links */}
-          <div className="flex space-x-10 mb-4 md:mb-0">
-            <a href="/about" className="text-purple hover:text-white">
-              About
-            </a>
-            <a href="/projects" className="text-purple hover:text-white">
-              Projects
-            </a>
-            <a href="/contact" className="text-purple hover:text-white">
-              Contact
-            </a>
+          <ul className="flex space-x-10 mb-4 md:mb-0">
+          <li><Link to="home" smooth={true} duration={500} className="text-purple hover:text-white cursor-pointer">Home</Link></li>
+          <li><Link to="projects" smooth={true} duration={500} className="text-purple hover:text-white cursor-pointer">Projects</Link></li>
+          <li><Link to="technologies" smooth={true} duration={500} className="text-purple hover:text-white cursor-pointer">Technologies</Link></li>
+          <li><Link to="contact" smooth={true} duration={500} className="text-purple hover:text-white cursor-pointer">Contact</Link></li>
             
-          </div>
+          </ul>
 
           {/* Made by */}
           <div className="text-sm">
