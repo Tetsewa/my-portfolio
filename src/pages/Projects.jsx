@@ -39,8 +39,8 @@ const ProjectCard = ({ project }) => {
                         <h1 className="text-3xl font-bold mb-4">{project.cardTitle}</h1>
                         <p className="text-base mb-4">{project.cardDetailedText}</p>
                         <div className="mt-4 flex space-x-4">
-                            <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="rounded-md bg-white py-2 px-4 text-sm hover:bg-neutral-900">Demo</a>
-                            <a href={project.sourceCodeLink} target="_blank" rel="noopener noreferrer" className="rounded-md bg-white py-2 px-4 text-sm hover:bg-neutral-900">Source</a>
+                            <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-gray-800 rounded-md bg-purple py-2 px-4 text-sm hover:bg-main hover:text-gray-800">Demo</a>
+                            <a href={project.sourceCodeLink} target="_blank" rel="noopener noreferrer" className="text-gray-800 rounded-md bg-main py-2 px-4 text-sm hover:bg-purple hover:text-gray-800">Source</a>
                         </div>
                     </div>
                 </div>
