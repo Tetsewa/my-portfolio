@@ -21,7 +21,7 @@ const projects = [
         title: "Feb 2024",
         cardTitle: "Fix It Game",
         cardDetailedText: "A single-player quiz game testing basic knowledge of computer hardware parts. Built with HTML, CSS, and JavaScript. Technologies Used: HTML, CSS, JavaScript, Canva.",
-        imageUrl: "Fix.png",  
+        imageUrl: "Fix-It-Game.png",  
         demoLink: "https://tetsewa.github.io/Fix-it-Game/",
         sourceCodeLink: "https://github.com/tetsewa/fix-it-game"
     }
@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
         <div className="group w-96 h-80 [perspective:1000px]">
             <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 <div className="absolute inset-0">
-                    <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 opacity-50" src={project.imageUrl} alt={project.cardTitle} />
+                    <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 opacity-80" src={project.imageUrl} alt={project.cardTitle} />
                 </div>
                 <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                     <div className="flex min-h-full flex-col items-center justify-center">
