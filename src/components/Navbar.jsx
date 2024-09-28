@@ -9,7 +9,7 @@ function Navbar() {
           <img 
             src="logo.png" 
             alt="Logo" 
-            className="h-16 w-auto mr-4 "
+            className="h-20 w-auto mr-4 "
           />
           {/* <span className="text-2xl font-bold">Ama Williams</span> */}
         </div>
