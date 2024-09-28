@@ -4,8 +4,8 @@ import { SiTypescript, SiTailwindcss, SiExpress, SiMongodb, SiMysql,SiCanva } fr
 
 function Technologies() {
   return (
-    <div className="p-6 bg-main">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">My Toolbox</h2>
+    <div className="p-6 bg-black">
+      <h2 className="text-4xl font-bold text-center text-white mb-8">My Toolbox</h2>
       
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 

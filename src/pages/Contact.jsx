@@ -14,8 +14,8 @@ function Contact() {
   ];
 
   return (
-    <div className="bg-main p-8 flex flex-col justify-center items-center">
-      <div className="bg-main p-8 max-w-2xl w-full">
+    <div className="bg-black p-8 flex flex-col justify-center items-center ">
+      <div className="bg-main p-8 max-w-2xl w-full rounded-lg shadow-xl">
         <h1 className="text-4xl font-bold text-center mb-4 text-neutral font-pacifico">Connect With Me</h1>
         
         <h2 className="text-xl text-center mb-8 text-neutral font-courgette">
