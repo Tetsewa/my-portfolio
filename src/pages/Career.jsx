@@ -1,15 +1,15 @@
 import React from 'react';
 
-const TimelineItem = ({ date, title, company, description }) => (
-  <div className="mb-8 flex justify-between items-center w-full right-timeline">
-    <div className="order-1 w-5/12"></div>
-    <div className="z-20 flex items-center order-1  w-8 h-8 ">
+const TimelineItem = ({ date, title, company, description, isLeft }) => (
+  <div className={`mb-8 flex flex-col md:flex-row justify-between items-center w-full ${isLeft ? 'md:flex-row-reverse' : ''}`}>
+    <div className="order-1 md:w-5/12"></div>
+    <div className="z-20 flex items-center order-1 w-8 h-8 rounded-full">
       <h1 className="mx-auto font-semibold text-lg text-neutral">{date}</h1>
     </div>
-    <div className="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 card">
+    <div className="order-1 bg-white rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 card">
       <h3 className="mb-3 font-bold text-neutral text-xl">{title}</h3>
       <h4 className="mb-3 font-semibold text-neutral text-base">{company}</h4>
-      <p className="text-sm leading-snug tracking-wide text-neutral text-opacity-100 text-justify">{description}</p>
+      <p className="text-sm leading-snug tracking-wide text-neutral text-opacity-100">{description}</p>
     </div>
   </div>
 );
@@ -37,13 +37,13 @@ const Career = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-main p-8">
-      <h1 className="text-4xl font-bold text-center mb-8 text-neutral">Professional Journey</h1>
+    <div className="min-h-screen bg-main p-4 md:p-8">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-neutral">Professional Journey</h1>
       <div className="container mx-auto w-full h-full">
-        <div className="relative wrap overflow-hidden p-10 h-full">
-          <div className="border-2-2 absolute border-opacity-20 border-neutral h-full border left-1/2"></div>
+        <div className="relative wrap overflow-hidden p-4 md:p-10 h-full">
+          <div className="border-2-2 absolute border-opacity-20 border-neutral h-full border left-1/2 hidden md:block"></div>
           {experiences.map((exp, index) => (
-            <TimelineItem key={index} {...exp} />
+            <TimelineItem key={index} {...exp} isLeft={index % 2 === 0} />
           ))}
         </div>
       </div>
