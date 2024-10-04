@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 function Contact() {
   const socialLinks = [
     { url: 'https://github.com/Tetsewa', label: 'GitHub' },
-    { url: 'https://gitlab.com/Tetsewa', label: 'GitLab' },
+    // { url: 'https://gitlab.com/Tetsewa', label: 'GitLab' },
     { url: 'https://www.instagram.com/te_tsiwah/', label: 'Instagram' },
     { url: 'https://codepen.io/Ama-Williams', label: 'CodePen' },
     { url: 'https://linkedin.com/in/amatwilliams', label: 'LinkedIn' },
