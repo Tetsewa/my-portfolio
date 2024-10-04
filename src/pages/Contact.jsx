@@ -4,13 +4,11 @@ import { SocialIcon } from 'react-social-icons';
 function Contact() {
   const socialLinks = [
     { url: 'https://github.com/Tetsewa', label: 'GitHub' },
-    { url: 'https://gitlab.com/yourusername', label: 'GitLab' },
-    { url: 'https://instagram.com/yourusername', label: 'Instagram' },
-    { url: 'https://facebook.com/yourusername', label: 'Facebook' },
-    { url: 'https://codepen.io/yourusername', label: 'CodePen' },
+    { url: 'https://gitlab.com/Tetsewa', label: 'GitLab' },
+    { url: 'https://www.instagram.com/te_tsiwah/', label: 'Instagram' },
+    { url: 'https://codepen.io/Ama-Williams', label: 'CodePen' },
     { url: 'https://linkedin.com/in/amatwilliams', label: 'LinkedIn' },
-    { url: 'https://twitter.com/yourusername', label: 'X (Twitter)' },
-    { url: 'mailto:yourname@gmail.com', label: 'Gmail' }
+    { url: 'mailto:amatwilliams@gmail.com', label: 'Gmail' }
   ];
 
   return (
