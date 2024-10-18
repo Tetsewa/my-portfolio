@@ -21,7 +21,7 @@ function About() {
         {/* Text Section */}
         <div className="w-full md:w-auto">
           <p className="text-lg text-gray-700 mb-4 text-justify">
-            I'm a <strong>fullstack web developer </strong>based in the Netherlands who loves to create responsive, and visually stunning web experiences.
+            I'm a <strong>fullstack web developer </strong>, with a preference for frontend development, based in the Netherlands and loves to create responsive, and visually stunning web experiences.
             
           </p>
           <p className="text-lg text-gray-700 mb-4">
